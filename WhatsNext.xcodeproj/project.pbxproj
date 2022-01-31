@@ -12,6 +12,9 @@
 		17E5948927A8402A001DF847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5948827A8402A001DF847 /* Assets.xcassets */; };
 		17E5948C27A8402A001DF847 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5948B27A8402A001DF847 /* Preview Assets.xcassets */; };
 		17E5949427A84044001DF847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949327A84044001DF847 /* AppDelegate.swift */; };
+		17E5949927A84215001DF847 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949627A84214001DF847 /* Date-Helper.swift */; };
+		17E5949A27A84215001DF847 /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949727A84214001DF847 /* EventSection.swift */; };
+		17E5949B27A84215001DF847 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949827A84215001DF847 /* EventRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		17E5948D27A8402A001DF847 /* WhatsNext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsNext.entitlements; sourceTree = "<group>"; };
 		17E5949327A84044001DF847 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17E5949527A8416D001DF847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17E5949627A84214001DF847 /* Date-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
+		17E5949727A84214001DF847 /* EventSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
+		17E5949827A84215001DF847 /* EventRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 		17E5948327A8402A001DF847 /* WhatsNext */ = {
 			isa = PBXGroup;
 			children = (
-				17E5949527A8416D001DF847 /* Info.plist */,
 				17E5948427A8402A001DF847 /* WhatsNextApp.swift */,
-				17E5948627A8402A001DF847 /* ContentView.swift */,
 				17E5949327A84044001DF847 /* AppDelegate.swift */,
+				17E5948627A8402A001DF847 /* ContentView.swift */,
+				17E5949627A84214001DF847 /* Date-Helper.swift */,
+				17E5949827A84215001DF847 /* EventRow.swift */,
+				17E5949727A84214001DF847 /* EventSection.swift */,
 				17E5948827A8402A001DF847 /* Assets.xcassets */,
+				17E5949527A8416D001DF847 /* Info.plist */,
 				17E5948D27A8402A001DF847 /* WhatsNext.entitlements */,
 				17E5948A27A8402A001DF847 /* Preview Content */,
 			);
@@ -145,8 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E5949427A84044001DF847 /* AppDelegate.swift in Sources */,
+				17E5949B27A84215001DF847 /* EventRow.swift in Sources */,
 				17E5948727A8402A001DF847 /* ContentView.swift in Sources */,
+				17E5949A27A84215001DF847 /* EventSection.swift in Sources */,
 				17E5948527A8402A001DF847 /* WhatsNextApp.swift in Sources */,
+				17E5949927A84215001DF847 /* Date-Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +295,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatsNext/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We want to read your calendar to show upoming events.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +324,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatsNext/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We want to read your calendar to show upoming events.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

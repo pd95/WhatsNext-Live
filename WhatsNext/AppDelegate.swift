@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WhatsNext
 //
-//  Created by Philipp on 30.01.22.
+//  Created by Philipp on 31.01.22.
 //
 
 import Foundation
@@ -28,7 +28,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Monitor mouse down
         NSEvent.addGlobalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             guard let self = self else { return }
-            print(event)
             if self.popover.isShown {
                 self.hidePopover(event)
             }
@@ -37,7 +36,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func showPopover() {
         guard let statusBarButton = statusItem?.button else { return }
-
         popover.show(relativeTo: statusBarButton.bounds, of: statusBarButton, preferredEdge: .maxY)
     }
 
