@@ -10,7 +10,6 @@
 		17E5948527A8402A001DF847 /* WhatsNextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5948427A8402A001DF847 /* WhatsNextApp.swift */; };
 		17E5948727A8402A001DF847 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5948627A8402A001DF847 /* ContentView.swift */; };
 		17E5948927A8402A001DF847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5948827A8402A001DF847 /* Assets.xcassets */; };
-		17E5948C27A8402A001DF847 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5948B27A8402A001DF847 /* Preview Assets.xcassets */; };
 		17E5949427A84044001DF847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949327A84044001DF847 /* AppDelegate.swift */; };
 		17E5949927A84215001DF847 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949627A84214001DF847 /* Date-Helper.swift */; };
 		17E5949A27A84215001DF847 /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949727A84214001DF847 /* EventSection.swift */; };
@@ -22,7 +21,6 @@
 		17E5948427A8402A001DF847 /* WhatsNextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNextApp.swift; sourceTree = "<group>"; };
 		17E5948627A8402A001DF847 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17E5948827A8402A001DF847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		17E5948B27A8402A001DF847 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17E5948D27A8402A001DF847 /* WhatsNext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsNext.entitlements; sourceTree = "<group>"; };
 		17E5949327A84044001DF847 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17E5949527A8416D001DF847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -70,17 +68,8 @@
 				17E5948827A8402A001DF847 /* Assets.xcassets */,
 				17E5949527A8416D001DF847 /* Info.plist */,
 				17E5948D27A8402A001DF847 /* WhatsNext.entitlements */,
-				17E5948A27A8402A001DF847 /* Preview Content */,
 			);
 			path = WhatsNext;
-			sourceTree = "<group>";
-		};
-		17E5948A27A8402A001DF847 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				17E5948B27A8402A001DF847 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E5948C27A8402A001DF847 /* Preview Assets.xcassets in Resources */,
 				17E5948927A8402A001DF847 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +277,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WhatsNext/Preview Content\"";
 				DEVELOPMENT_TEAM = P8CC95REUG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -318,7 +305,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WhatsNext/Preview Content\"";
 				DEVELOPMENT_TEAM = P8CC95REUG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
