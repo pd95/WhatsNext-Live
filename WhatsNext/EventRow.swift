@@ -20,10 +20,19 @@ struct EventRow: View {
     }
 
     var eventDate: String {
-        if Calendar.current.isDateInToday(event.startDate) || Calendar.current.isDateInTomorrow(event.startDate) {
-            return event.startDate.formatted(date: .omitted, time: .shortened)
+        let isTodayOrTomorrow = Calendar.current.isDateInToday(event.startDate) || Calendar.current.isDateInTomorrow(event.startDate)
+        if event.isAllDay {
+            if isTodayOrTomorrow {
+                return "all day"
+            } else {
+                return event.startDate.formatted(.dateTime.weekday(.wide))
+            }
         } else {
-            return event.startDate.formatted(.dateTime.weekday(.wide).hour().minute())
+            if isTodayOrTomorrow {
+                return event.startDate.formatted(date: .omitted, time: .shortened)
+            } else {
+                return event.startDate.formatted(.dateTime.weekday(.wide).hour().minute())
+            }
         }
     }
 }
