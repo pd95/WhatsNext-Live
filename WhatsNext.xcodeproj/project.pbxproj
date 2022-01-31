@@ -11,6 +11,7 @@
 		17E5948727A8402A001DF847 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5948627A8402A001DF847 /* ContentView.swift */; };
 		17E5948927A8402A001DF847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5948827A8402A001DF847 /* Assets.xcassets */; };
 		17E5948C27A8402A001DF847 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5948B27A8402A001DF847 /* Preview Assets.xcassets */; };
+		17E5949427A84044001DF847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5949327A84044001DF847 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		17E5948827A8402A001DF847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17E5948B27A8402A001DF847 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17E5948D27A8402A001DF847 /* WhatsNext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsNext.entitlements; sourceTree = "<group>"; };
+		17E5949327A84044001DF847 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				17E5948427A8402A001DF847 /* WhatsNextApp.swift */,
 				17E5948627A8402A001DF847 /* ContentView.swift */,
+				17E5949327A84044001DF847 /* AppDelegate.swift */,
 				17E5948827A8402A001DF847 /* Assets.xcassets */,
 				17E5948D27A8402A001DF847 /* WhatsNext.entitlements */,
 				17E5948A27A8402A001DF847 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E5949427A84044001DF847 /* AppDelegate.swift in Sources */,
 				17E5948727A8402A001DF847 /* ContentView.swift in Sources */,
 				17E5948527A8402A001DF847 /* WhatsNextApp.swift in Sources */,
 			);
