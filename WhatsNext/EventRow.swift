@@ -12,7 +12,8 @@ struct EventRow: View {
     let event: EKEvent
 
     var body: some View {
-        HStack {
+        HStack(spacing: 4) {
+            Color(event.calendar.color).frame(maxWidth: 10)
             Text(event.title)
             Spacer()
             Text(eventDate)
