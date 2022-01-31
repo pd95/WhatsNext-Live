@@ -27,6 +27,7 @@
 		17E5949627A84214001DF847 /* Date-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
 		17E5949727A84214001DF847 /* EventSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
 		17E5949827A84215001DF847 /* EventRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		17E5949C27A8489D001DF847 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 		17E5947827A8402A001DF847 = {
 			isa = PBXGroup;
 			children = (
+				17E5949C27A8489D001DF847 /* README.md */,
 				17E5948327A8402A001DF847 /* WhatsNext */,
 				17E5948227A8402A001DF847 /* Products */,
 			);
