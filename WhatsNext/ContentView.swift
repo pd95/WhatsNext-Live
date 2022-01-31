@@ -22,6 +22,7 @@ struct ContentView: View {
             EventSection(name: "Tomorrow", events: tomorrowEvents)
             EventSection(name: "Later", events: laterEvents)
         }
+        .overlay(quitButton, alignment: .topTrailing)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
             eventStore.requestAccess(to: .event) { granted, error in
@@ -35,6 +36,12 @@ struct ContentView: View {
                 }
             }
         }
+    }
+
+    var quitButton: some View {
+        Button("Quit", action: { NSApp.terminate(nil) })
+            .font(Font.subheadline)
+            .padding(4)
     }
 
     private func events(from: Date, to: Date) -> [EKEvent] {
